@@ -3,6 +3,7 @@ package pirat.awesomeraid;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +24,8 @@ public class PVE extends ActionBarActivity {
             public void onClick(View v) {
                 Intent in = new Intent(getApplicationContext(),PVERaid.class);
                 startActivity(in);
+                Log.d("Teg","start hier");
+                System.out.print("test");
             }
         });
     }
