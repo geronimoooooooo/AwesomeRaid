@@ -20,6 +20,10 @@
             android:name=".PVE"
             android:label="@string/title_activity_pve" >
         </activity>
+        <activity
+            android:name=".PVERaid"
+            android:label="@string/title_activity_pveraid" >
+        </activity>
     </application>
 
 </manifest>

@@ -11,4 +11,6 @@
     <string name="b_raid">Raid</string>
     <string name="b_classes">Klassen</string>
     <string name="b_cm">CM</string>
+    <string name="title_activity_pveraid">PVE-Raid</string>
+    <string name="tv_content">Content:</string>
 </resources>

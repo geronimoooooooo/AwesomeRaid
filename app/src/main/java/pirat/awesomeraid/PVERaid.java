@@ -1,37 +1,35 @@
 package pirat.awesomeraid;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
-public class MainActivity extends ActionBarActivity {
+public class PVERaid extends ActionBarActivity {
 
-    Button b_pve;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        b_pve = (Button)findViewById(R.id.b_pve);
+        setContentView(R.layout.activity_pve_raid);
 
-        b_pve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(getApplicationContext(),PVE.class);
-                startActivity(in);
-            }
-        });
+        Spinner spinner = (Spinner) findViewById(R.id.spinner_contentRaid);
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.raid_content, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_pve_raid, menu);
         return true;
     }
 

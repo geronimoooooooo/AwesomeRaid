@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/b_pve"
-        android:id="@+id/button"
+        android:id="@+id/b_pve"
         android:layout_below="@+id/tv_motto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="105dp" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/b_pvp"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/b_pve"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp" />
 
