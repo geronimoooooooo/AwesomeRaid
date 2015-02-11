@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AwesomeRaid!</string>
+
+    <string name="tv_motto">You are a pro or a noob, that\'s life!</string>
+    <string name="action_settings">Settings</string>
+    <string name="b_pve">PVE</string>
+    <string name="b_pvp">PVP</string>
+    <string name="title_activity_pve">PVE</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="b_raid">Raid</string>
+    <string name="b_classes">Klassen</string>
+    <string name="b_cm">CM</string>
+</resources>
